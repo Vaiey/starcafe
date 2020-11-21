@@ -1,0 +1,99 @@
+@import url('https://www.w3schools.com/w3css/4/w3.css');
+
+body {
+  margin: 0;
+  background-color: #eac784;
+}
+
+.icon {
+  height: 55px;
+  float: left;
+}
+
+.HEADER {
+  text-align: center;
+  margin: 20px;
+}
+
+.logo {
+  border-radius: 50%;
+}
+
+.BODY {
+  padding: 10px;
+  margin: 10px;
+}
+
+h1 {
+  text-align: center;
+  color: green;
+}
+
+h2 {
+  color: green;
+}
+
+.menu {
+  background-color:	#604c4c;
+  color: white;
+  padding: 20px;
+  border-radius: 2%;
+  padding-bottom: 200px;
+}
+
+hr {
+  border: 1px solid black;
+}
+
+table {
+  width: 100%;
+}
+
+th {
+  height: 60px;
+  color: black;
+}
+
+td {
+  height: 40px;
+  color: black;
+}
+
+button {
+  background-color:	#362415;
+  color: white;
+  border: none;
+  padding: 5px;
+  border-radius: 20%;
+}
+
+button:hover {
+  color: green;
+}
+
+.od {
+  float: right;
+  margin-top: -280px;
+}
+
+#pc {
+  height: 200;
+  width: 250px;
+  border-radius: 40%;
+  border: 2px solid black;
+}
+
+.nt {
+  text-align: center;
+  margin-top: 200px;
+  margin-bottom: -200px;
+  color: black;
+}
+
+h4, p {
+  color: black;
+}
+
+a:link {
+  text-decoration: none;
+}

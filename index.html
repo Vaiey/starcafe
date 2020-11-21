@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+    <title>FF</title>
+	<link rel="stylesheet" type="text/css" href="star.css">
+  </head>
+  <script src="order.js"></script>
+  <body>
+    <div class="nav-bar w3-bar w3-brown">
+      <img class="icon" src="https://i.pinimg.com/564x/01/5d/f8/015df8cfa9b7abaecbc60b760d157ff7.jpg">
+      <div class="w3-dropdown-hover w3-mobile">
+    <button class="w3-button w3-brown w3-hover-brown w3-hover-text-black w3-padding-16">Menu</button>
+    <div class="w3-dropdown-content w3-bar-block w3-green">
+      <a href="#" class="w3-bar-item w3-button w3-mobile w3-hover-none w3-hover-text-brown">Drinks</a>
+      <a href="#" class="w3-bar-item w3-button w3-mobile w3-hover-none w3-hover-text-brown">Foods</a>
+      <a href="#" class="w3-bar-item w3-button w3-mobile w3-hover-none w3-hover-text-brown">Featured</a>
+    </div>
+  </div>
+  <a href="#" class="w3-bar-item w3-button w3-mobile w3-hover-none w3-hover-text-green w3-padding-16">About Us</a>
+  <a href="#" class="w3-bar-item w3-button w3-mobile w3-hover-none w3-hover-text-green w3-padding-16">Privacy Policy</a>
+</div>
+    
+    <div class="HEADER">
+      <img class="logo" src="https://i.pinimg.com/564x/c9/48/7e/c9487e849bef338af98e35dbb168e327.jpg">
+      <h4>Take a break and have a cup of coffee.</h4>
+    </div>
+    
+    <div class="BODY">
+      <div class="menu">
+        <h1>Menu</h1><hr>
+        <div class="dr">
+          <h2>Drinks</h2>
+          <table>
+            <tr>
+              <th>Hot Coffees</th>
+              <th></th>
+              <th>Cold Coffees</th>
+            </tr>
+            <tr>
+              <td>Caffé Americano</td>
+              <td><button onclick="hc1()"><a href="#pc" id="ca">HC1</a></button></td>
+              <td>Iced Caffé Americano</td>
+              <td><button onclick="cc1()"><a href="#pc" id="ica">CC1</a></button></td>
+            </tr>
+            <tr>
+              <td>Cappuccino</td>
+              <td><button onclick="hc2()"><a href="#pc" id="cp">HC2</a></button></td>
+              <td>Iced Coffee</td>
+              <td><button onclick="cc2()"><a href="#pc" id="ic">CC2</a></button></td>
+            </tr>
+            <tr>
+              <td>Espresso</td>
+              <td><button onclick="hc3()"><a href="#pc" id="ep">HC3</a></button></td>
+              <td>Iced Espresso</td>
+              <td><button onclick="cc3()"><a href="#pc" id="iep">CC3</a></button></td>
+            </tr>
+            <tr>
+              <td>Caffé Latte</td>
+              <td><button onclick="hc4()"><a href="#pc" id="cl">HC4</a></button></td>
+              <td>Iced Caffé Latte</td>
+              <td><button onclick="cc4()"><a href="#pc" id="icl">CC4</a></button></td>
+            </tr>
+            <tr>
+              <td>Espresso Macchiato</td>
+              <td><button onclick="hc5()"><a href="#pc" id="epmt">HC5</a></button></td>
+              <td>Iced Caramel Macchiato</td>
+              <td><button onclick="cc5()"><a href="#pc" id="icmt">CC5</a></button></td>
+            </tr>
+          </table><br><br>
+          <div class="fd">
+            <h2>Foods</h2>
+            <table>
+              <tr>
+                <th>Breakfast</th>
+                <th></th>
+                <th>Bread</th>
+              </tr>
+              <tr>
+                <td>Bacon, Egg & Cheese Burrito</td>
+                <td><button onclick="bf1()"><a href="#pc" id="becb">BF1</a></button></td>
+                <td>Classic Bagel</td>
+                <td><button onclick="bd1()"><a href="#pc" id="cb">BD1</a></button></td>
+              </tr>
+              <tr>
+                <td>Bacon & Egg Grilled Cheese Sandwich</td>
+                <td><button onclick="bf2()"><a href="#pc" id="begcs">BF2</a></button></td>
+                <td>Cinnamon Rolls</td>
+                <td><button onclick="bd2()"><a href="#pc" id="cmr">BD2</a></button></td>
+              </tr>
+              <tr>
+                <td>Crispy Chicken Sandwich</td>
+                <td><button onclick="bf3()"><a href="#pc" id="ccs">BF3</a></button></td>
+                <td>Chocolate Chip Cookie</td>
+                <td><button onclick="bd3()"><a href="#pc" id="ccc">BD3</a></button></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td>Fudgy Dark Chocolate Brownies</td>
+                <td><button onclick="bd4()"><a href="#pc" id="fdcb">BD4</a></button></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td>French Croissant</td>
+                <td><button onclick="bd5()"><a href="#pc" id="fcs">BD5</a></button></td>
+              </tr>
+            </table>
+          </div><br>
+          <hr>
+          <br>
+          <div class="rcpt">
+          <h4>Orders Here</h4>
+            <br>
+            <p>Product:</p>
+          <p id="prd"></p>
+          <br><br>
+            <p>Price:</p>
+          <p id="prc"></p>
+            <br><br>
+          <button id="clr" onclick="undo()">Undo Order</button>
+          <button id="co" onclick="complete()">Complete Order</button>
+        </div>
+          
+          <div class="od">
+            <h2>Place An Order</h2><br>
+            <img id="pc" src="https://i.pinimg.com/564x/78/cb/ac/78cbac370d8237aaca30474402aeeea8.jpg"></img>
+        </div>
+        
+        <div class="nt">
+          <p>Note: Only solo cup size for drinks is available for the moment. The bread prices may vary per piece.</p>
+        </div>
